@@ -2,12 +2,11 @@ const cmdargs = process.argv.slice(2);
 
 const timer = (args) => {
   let results = [];
-  //If no numbers are provided, prompt the user to try again with some numbers and end program
   if (args.length === 0) {
     console.log("No timers set, try entering some positive numbers in the command line!");
     return;
   }
-  args.forEach((element,index) => {
+  args.forEach((element) => {
     if (!isNaN(element)) {
       if (element < 0) {
         console.log(`please enter only positive numbers; removed '${element}'`);
