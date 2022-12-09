@@ -15,7 +15,7 @@ const timer = () =>{
         process.stdout.write('\x07');
         resolve(timer());
       } else {
-        console.log('Invalid input, please enter only positive numbers or "b"\n');
+        console.log('Invalid input, please enter only positive numbers or "b"');
         timer();
       }
     });
