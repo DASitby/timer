@@ -5,7 +5,7 @@ const rl = readline.createInterface({
 });
 
 const timer = () =>{
-  return new Promise((resolve,reject) => {
+  return new Promise((resolve) => {
     rl.question('Please enter a time in seconds: ', (time) => {
       if (time >= 0) {
         console.log(`Timer set for ${time} seconds`);
