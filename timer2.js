@@ -14,9 +14,6 @@ const timer = () =>{
       } else if (time === 'b') {
         process.stdout.write('\x07');
         resolve(timer());
-      } else if (time === 'SIGINT') {
-        console.log("Quitting!");
-        process.exit;
       } else {
         timer();
       }
